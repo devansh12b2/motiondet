@@ -31,6 +31,6 @@ else
         npm run generate
     else
         echo "Valid options include:"
-        echo "dev, generate, start"
+        echo "dev, gen, start"
     fi
 fi
