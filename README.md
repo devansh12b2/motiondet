@@ -21,3 +21,20 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## About the app
 It is a frontend for any face or motion detection app. I have used nuxtjs with prettier and eslint. It is a basic app to capture a photo using the device's camera.
+## Dependencies Include
+
+- @nuxtjs/axios
+- bootstrap
+- bootstrap-vue
+- core-js
+- nuxt
+- vue
+- vue-server-renderer
+- vue-template-compiler
+- webpack
+
+
+## Formatter and Linter
+
+- prettier
+- eslint
