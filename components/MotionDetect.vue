@@ -2,12 +2,8 @@
   <div>
     <div id="app" class="web-camera-container">
       <div class="camera-button">
-        <button
-          type="button"
-          class="button is-rounded"
-          :class="{ 'is-primary': !isCameraOpen, 'is-danger': isCameraOpen }"
-          @click="toggleCamera"
-        >
+        <button type="button" class="button is-rounded"
+          :class="{ 'is-primary': !isCameraOpen, 'is-danger': isCameraOpen }" @click="toggleCamera">
           <span v-if="!isCameraOpen">Open Camera</span>
           <span v-else>Close Camera</span>
         </button>
@@ -21,47 +17,22 @@
         </ul>
       </div>
 
-      <div
-        v-if="isCameraOpen"
-        v-show="!isLoading"
-        class="camera-box"
-        :class="{ flash: isShotPhoto }"
-      >
+      <div v-if="isCameraOpen" v-show="!isLoading" class="camera-box" :class="{ flash: isShotPhoto }">
         <div class="camera-shutter" :class="{ flash: isShotPhoto }"></div>
 
-        <video
-          v-show="!isPhotoTaken"
-          ref="camera"
-          :width="450"
-          :height="337.5"
-          autoplay
-        ></video>
+        <video v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
 
-        <canvas
-          v-show="isPhotoTaken"
-          id="photoTaken"
-          ref="canvas"
-          :width="450"
-          :height="337.5"
-        ></canvas>
+        <canvas v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
       </div>
 
       <div v-if="isCameraOpen && !isLoading" class="camera-shoot">
         <button type="button" class="button" @click="takePhoto">
-          <img
-            src="https://img.icons8.com/material-outlined/50/000000/camera--v2.png"
-          />
+          <img src="https://img.icons8.com/material-outlined/50/000000/camera--v2.png" />
         </button>
       </div>
 
       <div v-if="isPhotoTaken && isCameraOpen" class="camera-download">
-        <a
-          id="downloadPhoto"
-          download="my-photo.jpg"
-          class="button"
-          role="button"
-          @click="downloadImage"
-        >
+        <a id="downloadPhoto" download="my-photo.jpg" class="button" role="button" @click="downloadImage">
           Download
         </a>
       </div>
@@ -79,7 +50,7 @@
         ipsum primis in faucibus. Donec finibus arcu eget ipsum consequat
         semper. Fusce facilisis orci eu tellus pharetra, ut dictum massa
         iaculis. Curabitur venenatis purus id cursus mattis. Sed est mauris,
-        scelerisque id feugiat vitae, aliquet a leo. Aliquam porta ut nisi at
+        scelerisque id feugiat vitae, aliquet maa ka bhosda leo. Aliquam porta ut nisi at
         bibendum. Proin aliquet blandit velit, et sodales massa aliquam in. Sed
         maximus ante quis leo varius, vitae viverra erat hendrerit. Class aptent
         taciti sociosqu ad litora torquent per conubia nostra, per inceptos
@@ -198,9 +169,11 @@ body {
   border-radius: 12px;
   width: 500px;
 }
+
 .web-camera-container .camera-button {
   margin-bottom: 2rem;
 }
+
 .web-camera-container .camera-box .camera-shutter {
   opacity: 0;
   width: 450px;
@@ -208,12 +181,15 @@ body {
   background-color: #fff;
   position: absolute;
 }
+
 .web-camera-container .camera-box .camera-shutter.flash {
   opacity: 1;
 }
+
 .web-camera-container .camera-shoot {
   margin: 1rem 0;
 }
+
 .web-camera-container .camera-shoot button {
   height: 60px;
   width: 60px;
@@ -222,10 +198,12 @@ body {
   justify-content: center;
   border-radius: 100%;
 }
+
 .web-camera-container .camera-shoot button img {
   height: 35px;
   object-fit: cover;
 }
+
 .web-camera-container .camera-loading {
   overflow: hidden;
   height: 100%;
@@ -234,6 +212,7 @@ body {
   min-height: 150px;
   margin: 3rem 0 0 -1.2rem;
 }
+
 .web-camera-container .camera-loading ul {
   height: 100%;
   position: absolute;
@@ -241,6 +220,7 @@ body {
   z-index: 999999;
   margin: 0;
 }
+
 .web-camera-container .camera-loading .loader-circle {
   display: block;
   height: 14px;
@@ -253,6 +233,7 @@ body {
   width: 100%;
   padding: 0;
 }
+
 .web-camera-container .camera-loading .loader-circle li {
   display: block;
   float: left;
@@ -267,19 +248,24 @@ body {
   top: -50%;
   border-radius: 100%;
 }
+
 .web-camera-container .camera-loading .loader-circle li:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .web-camera-container .camera-loading .loader-circle li:nth-child(3) {
   animation-delay: 0.4s;
 }
+
 @keyframes preload {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.4;
   }
+
   100% {
     opacity: 1;
   }
@@ -289,6 +275,7 @@ body {
   .web-camera-container {
     width: 350px;
   }
+
   .web-camera-container .camera-box .camera-shutter {
     width: 300px;
   }
