@@ -145,7 +145,7 @@ export default {
 body {
   display: flex;
   justify-content: center;
-  /* background-image: url(https://cdn.wallpapersafari.com/29/27/4fEkD3.png); */
+  background-image: url(https://cdn.wallpapersafari.com/29/27/4fEkD3.png);
 }
 
 .web-camera-container {
