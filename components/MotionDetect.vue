@@ -43,19 +43,9 @@
         </button>
       </div>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis
-        nulla a tellus sollicitudin suscipit. Aliquam erat volutpat. Suspendisse
-        suscipit tellus a enim dictum malesuada. Maecenas turpis mauris, semper
-        nec leo quis, consequat rutrum mi. Interdum et malesuada fames ac ante
-        ipsum primis in faucibus. Donec finibus arcu eget ipsum consequat
-        semper. Fusce facilisis orci eu tellus pharetra, ut dictum massa
-        iaculis. Curabitur venenatis purus id cursus mattis. Sed est mauris,
-        scelerisque id feugiat vitae, aliquet maa ka bhosda leo. Aliquam porta ut nisi at
-        bibendum. Proin aliquet blandit velit, et sodales massa aliquam in. Sed
-        maximus ante quis leo varius, vitae viverra erat hendrerit. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Pellentesque pulvinar ligula at leo accumsan euismod. Aenean
-        faucibus laoreet diam, et faucibus urna rutrum ac.
+        This is a Face/Motion detector site. Here you can record your motion and upload it, For this you can
+        either use your cam or you can use any other photo which u want to upload.
+        This is easy to use solution for photo uploading problem.
       </div>
     </div>
   </div>
@@ -155,9 +145,11 @@ export default {
 body {
   display: flex;
   justify-content: center;
+  /* background-image: url(https://cdn.wallpapersafari.com/29/27/4fEkD3.png); */
 }
 
 .web-camera-container {
+  background: #fff;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -165,8 +157,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 12px;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
   width: 500px;
 }
 
