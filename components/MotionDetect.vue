@@ -145,9 +145,11 @@ export default {
 body {
   display: flex;
   justify-content: center;
+  background-image: url(https://cdn.wallpapersafari.com/29/27/4fEkD3.png);
 }
 
 .web-camera-container {
+  background: #fff;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -155,8 +157,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 12px;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
   width: 500px;
 }
 
